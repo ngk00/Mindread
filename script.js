@@ -1289,12 +1289,12 @@ const searchBox = document.getElementById("searchBox");
   
   
   // Search
-  function search() {
+  async function search() {
   
       const query = searchBox.value.trim();
   
       if (query !== "") {
-        set(ref(db, "searches/" + Date.now()), {
+        await set(ref(db, "searches/" + Date.now()), {
     name: query
 });
   
