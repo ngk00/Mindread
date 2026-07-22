@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="logo">Google</h1>
+
+    <div class="search-box">
+
+        <div class="left-icon" id="leftIcon">
+            <img src="images/google-g-logo.svg" class="g-logo" alt="Google">
+        </div>
+
+        <input
+    type="text"
+    id="searchBox"
+    autocomplete="off"
+    name="search"
+    autocapitalize="off"
+    autocorrect="off"
+    spellcheck="false"
+    placeholder="Search Google or type URL "
+>
+<svg class="mic-icon"
+         xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     width="24"
+     height="24">
+
+  <!-- Microphone Body -->
+  <rect x="8.8"
+        y="1.5"
+        width="6.4"
+        height="13"
+        rx="3.2"
+        fill="#ffffff"/>
+
+  <!-- U Shape -->
+  <path d="M6.5 12
+           C6.5 15.8 9 18.3 12 18.3
+           C15 18.3 17.5 15.8 17.5 12"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <!-- Stem -->
+  <rect x="11.3"
+        y="18"
+        width="1.4"
+        height="3"
+        rx="0.7"
+        fill="#ffffff"/>
+
+  <!-- Base -->
+  <rect x="8.3"
+        y="20.7"
+        width="7.4"
+        height="1.4"
+        rx="0.7"
+        fill="#ffffff"/>
+
+</svg>
+
+        <svg class="lens-icon"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24">
+
+  <path d="M4 8V6a2 2 0 0 1 2-2h2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"/>
+
+  <path d="M16 4h2a2 2 0 0 1 2 2v2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"/>
+
+  <path d="M8 20H6a2 2 0 0 1-2-2v-2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"/>
+
+  <path d="M20 16v2a2 2 0 0 1-2 2h-2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.2"
+        stroke-linecap="round"/>
+
+  <circle cx="12" cy="12" r="3.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"/>
+
+  <circle cx="12" cy="12" r="1.2"
+          fill="currentColor"/>
+
+  <circle cx="17.2" cy="7" r="0.8"
+          fill="currentColor"/>
+
+</svg>
+
+    </div>
+
+    <div class="suggestions"></div>
+
+    <div class="feature-capsules">
+
+        <div class="feature-capsule">
+            <svg class="ai-icon"
+                 xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <path d="M12 5A6 6 0 1 0 17 12"/>
+                <line x1="15.5" y1="15.5" x2="20" y2="20" stroke-width="2.5"/>
+                <path d="M16 4C16 6.5 17 7.5 19.5 7.5C17 7.5 16 8.5 16 11C16 8.5 15 7.5 12.5 7.5C15 7.5 16 6.5 16 4Z"
+                      fill="currentColor"
+                      stroke="none"/>
+            </svg>
+            <span>AI mode</span>
+        </div>
+
+        <div class="feature-capsule">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 24 24"
+         width="30"
+         height="30"
+         style="flex-shrink:0">
+
+      <g fill="none"
+         stroke="#EAF7F7"
+         stroke-width="1.2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+
+        <!-- Hat -->
+        <path d="M7.2 10.2L8.9 5.8H15.1L16.8 10.2"/>
+        <path d="M10.1 5.8C10.6 5.1 11.2 4.8 12 4.8C12.8 4.8 13.4 5.1 13.9 5.8"/>
+        <line x1="5.5" y1="10.2" x2="18.5" y2="10.2"/>
+
+        <!-- Glasses -->
+        <circle cx="8.5" cy="15.5" r="2.4"/>
+        <circle cx="15.5" cy="15.5" r="2.4"/>
+        <path d="M10.9 15.5H13.1"/>
+
+      </g>
+    </svg>
+
+    <span>Incognito</span>
+
+    </div>
+
+</div>
+
+
+<div class="bottom-box">
+    <div class="add-item">
+        <div class="plus-circle">+</div>
+        <span>Add new</span>
+    </div>
+</div>
+<div class="scroll-box">
+
+    <!-- Featured News -->
+    <div class="featured-news">
+
+        <div class="featured-text">
+            <h3>
+                World’s first blended wing jet promises 5,000 nm range and 50% fuel savings
+            </h3>
+
+            <p>BBC News · 2 hours ago</p>
+        </div>
+
+        <img src="images/news1.jpg" alt="News">
+
+    </div>
+
+    <!-- Normal News -->
+    <div class="news-post">
+
+        <img src="images/news2.jpg" alt="News">
+
+        <h3>
+            Mercedes explains Russell issue as Ferrari disputes Hamilton penalty – round up
+        </h3>
+
+        <p>The planetf1 · 4 hours ago</p>
+
+    </div>
+
+    <div class="news-post">
+
+        <img src="images/news3.jpg" alt="News">
+
+        <h3>
+            James Webb Space Telescope discovers the secrets of cosmic 'factories' that filled the early universe with stardust
+        </h3>
+
+        <p> space · Today</p>
+
+    </div>
+
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
